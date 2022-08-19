@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking time to answer</p>
+    <form id="survey-form">
+      <fieldset>
+        <label class="question" id="name-label" >Enter Your Name: <input id="name" type="text" placeholder="John Doe" required /></label>
+        <label class="question" id="email-label">Enter Your Email: <input id="email" type="email" placeholder="john@email.com" required /></label>
+        <label class="question" id="number-label">Age(Optional): <input id="number" type="number" min="13" max="120" placeholder="21" />
+      </fieldset>
+      <fieldset>
+         <label class="question" >Gender
+          <select id="dropdown" >
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Prefer not to say</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label class="question" >Do you love me?
+          <label><input value="1"  type="radio" name="okay" class="inline" /> Yes</label>
+          <label><input value="2" type="radio" name="okay" class="inline" /> Of course</label>
+          <label><input value="3" type="radio" name="okay" class="inline" /> I do</label>
+        </label>
+        <label class="question" > Food I like: 
+          <label>
+          <input value="1" type="checkbox" name="food" class="inline" /> Pizza
+          </label>
+          <label>
+          <input value="2" type="checkbox" name="food" class="inline" /> Spaghetti
+          </label>
+          <label>
+          <input value="3" type="checkbox" name="food" class="inline" /> BBQ
+          </label>
+        </label>
+        <label class="question" >Say gibberish:
+          <textarea name="gibber" rows="3" cols="30" placeholder="lkjsldj poqojnfn aislnvcxnnk po233oetmkl"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
